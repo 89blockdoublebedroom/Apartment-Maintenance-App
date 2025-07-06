@@ -1,0 +1,79 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #ffffff;
+}
+h1 {
+  text-align: center;
+}
+.profile-buttons {
+  text-align: center;
+  margin-bottom: 20px;
+}
+button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.admin {
+  background-color: #007BFF;
+  color: white;
+}
+.user {
+  background-color: #28A745;
+  color: white;
+}
+.usage {
+  background-color: #ffc107;
+  color: white;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+.paid {
+  background-color: #c8f7c5;
+}
+.unpaid {
+  background-color: #f8d7da;
+}
+.not-allocated {
+  background-color: #d6d6d6;
+}
+.future-month {
+  background-color: #eeeeee;
+  color: #aaa;
+}
+.current-unpaid {
+  border: 2px solid red;
+}
+select {
+  padding: 4px;
+}
+.year-controls {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.popup {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+.popup-inner {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}

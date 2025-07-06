@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Apartment Maintenance App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Apartment Maintenance App</h1>
+
+  <!-- Profile Buttons -->
+  <div class="profile-buttons">
+    <button class="admin" onclick="showLoginPopup()">Admin</button>
+    <button class="user" onclick="switchProfile('user')">User</button>
+    <button class="dashboard" onclick="showUsage()">Paid/Unpaid Details </button>
+    <button class="dashboard" onclick="showMonthlyUsages()">Monthly Usages</button>
+  </div>
+
+  <!-- Year Selection and Add Year (Admin only) -->
+  <div class="year-controls">
+    <label for="yearSelect">Year:</label>
+    <select id="yearSelect"></select>
+    <button onclick="addNewYear()">➕ Add Year</button>
+  </div>
+
+  <!-- Data Display Areas -->
+  <div id="table-container"></div>
+  <div id="save-button-container" style="text-align:center; margin-top: 20px;"></div>
+
+  <!-- Usage Table -->
+  <div id="usage-container" style="display:none; margin-top: 20px;"></div>
+
+  <!-- Monthly Usages Table -->
+  <div id="monthly-usage-container" style="display:none; margin-top: 20px;"></div>
+
+  <!-- Admin Login Popup -->
+  <div id="admin-login" class="popup" style="display:none;">
+    <div class="popup-inner">
+      <h3>Enter Admin/Sub-admin Password</h3>
+      <input type="password" id="adminPassword" placeholder="Password" />
+      <br /><br />
+      <button onclick="verifyPassword()">Login</button>
+      <button onclick="hideLoginPopup()">Cancel</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
